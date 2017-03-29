@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/leaflet.css" />
     <!-- Choose a frontend framework CSS file: -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+     <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- <link rel="stylesheet" href="css/material.css" /> -->
     <!-- <link rel="stylesheet" href="css/assembly.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
@@ -18,18 +18,60 @@
       <nav class="navbar navbar-default">
         <div class="container-fluid clearfix">
           <div class="topright-button" style="float: right">
-            [Add New]
+            <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Add-New
+    <span class="caret"></span>
+  </button>
+
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
           </div>
           <div class="navbar-header">
             <a href="#">Manufacturers</a>
           </div>
+
+
+          <div class="row">
+          <!-- /input-group -->
+            <!-- /.col-lg-6 -->
+            <div class="col-lg-6">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">
+                     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                  </button>
+                </span>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+
+
+
         </div>
       </nav>
+
+
       <div class="item">
         <h2 class="item-heading">Tandy’s Basketweavers</h2>
         <div>490 Freedom Drive<br>
         Philadelphia, PA 19425</div>
-      </div>
+        <button id="makesmall" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent dialog-button">
+         Low Inventory
+         </button>
+        <div class="mdl-tooltip" data-mdl-for="makesmall">click here!</div>
+
+      <!--<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">tooltip</button>-->
+
+
       <div class="item">
         <h2 class="item-heading">Basket Case</h2>
         <div>400 S 46th Street<br>
@@ -50,17 +92,93 @@
         <div>2542 Walnut Street<br>
         Philadelphia, PA 19107</div>
       </div>
+
+
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                      Launch demo modal
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Manufacturer</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                                      <div class="col-md-12"><span class="label label-danger">This manufacturer has Low Inventory</span></div>
+                                    </div><br>
+                                      <div class="row">
+                                        <div class="col-md-7"><span class ="tandy">Tandy's Basketweaver</span></div>
+                                        <div class="col-md-5">
+                                          <div class="btn-group" role="group" aria-label="...">
+                                            <button type="button" class="btn btn-default">Edit</button>
+                                            <button type="button" class="btn btn-default">Delete</button>
+                                            <button type="button" class="btn btn-default">Export</button>
+                                          </div>
+                                        </div>
+                                      </div><hr>
+                                      <div class="row"><br>
+                                        <div class="col-md-4"><span class = "address">Address</span><br><span class = "addtext">490 Freedom Drive  Philadelphia, PA 19425</div>
+                                        <div class="col-md-4"><span class = "address">Contact<br></span><span class = "addtext">Dave Javies<br> Senior Weaver <br>dj@tbw.com</div>
+                                        <div class="col-md-4"><span class = "numbers">324</span><br><span class = "baskettext">Baskets sold in the past 7 days</span></div>
+                                      </div><hr>
+                                    <div class="row">
+                                      <div class="col-md-12">Sales</div>
+                                    </div><br>
+                                    <div class="row"><span class ="table">
+                                      <span class = "names">
+                                      <div class="col-xs-4">First Name</div>
+                                      <div class="col-xs-4">Last Name</div>
+                                      <div class="col-xs-4">Purchase</div><span>
+                                    </div><hr>
+                                    <div class="row">
+                                      <div class="col-xs-4">Mark</div>
+                                      <div class="col-xs-4">Otto </div>
+                                      <div class="col-xs-4">Fruitbasket</div>
+                                    </div><hr>
+                                    <div class="row">
+                                      <div class="col-xs-4">Jacob</div>
+                                      <div class="col-xs-4">Thornton </div>
+                                      <div class="col-xs-4">Giftbasket</div>
+                                    </div><hr>
+                                    <div class="row">
+                                      <div class="col-xs-4">Larry</div>
+                                      <div class="col-xs-4">The Bird</div>
+                                      <div class="col-xs-4">Easterbasket</div>
+                                    </div><hr>
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
       <div class="sort">
         Sort by <span class="sort-option selected">A–Z</span> <span class="sort-option">Inventory</span>
       </div>
     </div>
+
     <!-- Map -->
     <div id="map" class="map"></div>
     <!-- Javascript Imports -->
     <script src="js/jquery-2.2.0.js"></script>
     <script src="js/leaflet.js"></script>
     <!-- Choose a frontend framework Javascript file: -->
-    <!-- <script src="js/bootstrap.js"></script> -->
+    <script src="js/bootstrap.js"></script>
     <!-- <script src="js/material.js"></script> -->
     <!-- <script src="js/assembly.js"></script>  -->
     <script src="js/setup.js"></script>

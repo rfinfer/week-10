@@ -69,17 +69,80 @@ body {
     font-weight: bold;
 }
 
+.tandy {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.address{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.numbers{
+  font-size: 60px;
+  color: #52a2b2;
+}
+
+.baskettext{
+  text-align: center;
+}
+
+.col-md-12{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.names{
+  font-weight: bold;
+  font-size: 14px;
+}
+hr { margin: 0.1em auto; }
 /* =============
 Media Queries
 ============= */
 
 @media screen and (min-width: 480px) and (max-width: 800px) {
+  .sidebar {
+      position: absolute;
+      left: 0px;
+      width: 200px;
+      top: 0;
+      bottom: 0;
+      overflow-y: auto;
+      padding: 20px;
+      padding-bottom: 60px;
+  }
+  .map {
+      position: absolute;
+      right: 0px;
+      left: 200px;
+      height: 100%;
+      top: 0;
+  }
     /*.item {
         background-color: blue;
     }*/
 }
 
 @media screen and (max-width: 479px) {
+  .sidebar {
+      position: absolute;
+      left: 0px;
+      width: 0px;
+      top: 0;
+      bottom: 0;
+      overflow-y: auto;
+      padding: 20px;
+      padding-bottom: 60px;
+  }
+  .map {
+      position: absolute;
+      right: 0px;
+      left: 0px;
+      height: 100%;
+      top: 0;
+  }
     /*.item {
         background-color: red;
     }*/

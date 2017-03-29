@@ -28,8 +28,12 @@ var Stamen_TonerLite = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolab
 // To add visualizations created with the Analysis feature, you will need to export the data to a
 // GeoJSON. From there, you can either import the GeoJSON to Carto or use Leaflet's L.geoJson.
 
-var cartoUserName = 'jfreink';
-var cartoVizId = '1f7c9af2-1088-11e7-9c60-0e05a8b3e3d7';
+var cartoUserName = 'rfinfer';
+var cartoVizId = '19e1646e-13b8-11e7-81d3-0ef7f98ade21';
+//https://carto.com/dataset/bikeroutes_ny
+
+//var myLayer = L.geoJSON(/Users/rachel/Downloads).addTo(map);
+
 
 var layerUrl = 'https://'+cartoUserName+'.carto.com/api/v2/viz/'+cartoVizId+'/viz.json';
 
